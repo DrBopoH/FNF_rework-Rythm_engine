@@ -1,0 +1,13 @@
+[gd_scene format=2]
+
+[node name="Nexting" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 262.0
+margin_bottom = 130.0
+
+[node name="Next" type="TextureButton" parent="."]
+margin_left = -101.0
+margin_top = -111.0
+margin_right = 1409.0
+margin_bottom = 893.0

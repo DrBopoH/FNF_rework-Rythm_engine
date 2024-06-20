@@ -1,0 +1,531 @@
+[gd_scene load_steps=175 format=2]
+
+[ext_resource path="res://InfoWindow.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Menu/Buttons/STICKS/List.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Menu/Buttons/ABCD/Choice.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Menu/Buttons/STICKS/Right_stick.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Menu/Buttons/HITBOX/Hitbox.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Menu/Buttons/STICKS/Left_stick.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Menu/Buttons/MainMenu/FreePlay/Active/AFreeplay3.png" type="Texture" id=7]
+[ext_resource path="res://Menu/Buttons/MainMenu/Options/Active/AOptions2.png" type="Texture" id=8]
+[ext_resource path="res://Menu/Buttons/MainMenu/Options/Unactive/UOptions1.png" type="Texture" id=9]
+[ext_resource path="res://Menu/Buttons/MainMenu/Options/Unactive/UOptions2.png" type="Texture" id=10]
+[ext_resource path="res://Menu/Buttons/MainMenu/Options/Unactive/UOptions3.png" type="Texture" id=11]
+[ext_resource path="res://Menu/Buttons/MainMenu/StoryMode/Active/AStorymode2.png" type="Texture" id=12]
+[ext_resource path="res://Menu/Buttons/MainMenu/StoryMode/Active/AStorymode3.png" type="Texture" id=13]
+[ext_resource path="res://Menu/Buttons/MainMenu/StoryMode/Active/AStorymode1.png" type="Texture" id=14]
+[ext_resource path="res://Menu/Buttons/MainMenu/FreePlay/Active/AFreeplay1.png" type="Texture" id=15]
+[ext_resource path="res://Menu/Buttons/MainMenu/FreePlay/Unactive/UFreeplay3.png" type="Texture" id=16]
+[ext_resource path="res://Menu/Buttons/MainMenu/FreePlay/Active/AFreeplay2.png" type="Texture" id=17]
+[ext_resource path="res://Menu/Buttons/MainMenu/FreePlay/Unactive/UFreeplay2.png" type="Texture" id=18]
+[ext_resource path="res://Menu/Backgrounds/TabiMod/TmenuBGBlue.png" type="Texture" id=19]
+[ext_resource path="res://Menu/Backgrounds/Original/OmenuBG.png" type="Texture" id=20]
+[ext_resource path="res://Menu/Buttons/MainMenu/Options/Active/AOptions3.png" type="Texture" id=21]
+[ext_resource path="res://Menu/Backgrounds/Original/OmenuDesat.png" type="Texture" id=22]
+[ext_resource path="res://Menu/Backgrounds/Original/OmenuBGBlue.png" type="Texture" id=23]
+[ext_resource path="res://Menu/Menu.gd" type="Script" id=24]
+[ext_resource path="res://Menu/Music/MenuMusic.ogg" type="AudioStream" id=25]
+[ext_resource path="res://Menu/Buttons/MainMenu/FreePlay/Unactive/UFreeplay1.png" type="Texture" id=26]
+[ext_resource path="res://Menu/Buttons/MainMenu/Options/Active/AOptions1.png" type="Texture" id=27]
+[ext_resource path="res://Menu/Buttons/MainMenu/StoryMode/Unactive/UStorymode1.png" type="Texture" id=28]
+[ext_resource path="res://Menu/Buttons/MainMenu/StoryMode/Unactive/UStorymode2.png" type="Texture" id=29]
+[ext_resource path="res://Menu/Buttons/MainMenu/StoryMode/Unactive/UStorymode3.png" type="Texture" id=30]
+[ext_resource path="res://Menu/Sounds/Choice_confirm.ogg" type="AudioStream" id=31]
+[ext_resource path="res://Menu/Sounds/Choice_scroll.ogg" type="AudioStream" id=32]
+[ext_resource path="res://Menu/Sounds/Choice_cancel.ogg" type="AudioStream" id=33]
+[ext_resource path="res://Menu/Backgrounds/Transition/Transition.png" type="Texture" id=34]
+[ext_resource path="res://Loading/RHYTHM EHGINE BY_.png" type="Texture" id=35]
+[ext_resource path="res://Loading/RHYTHM EHGINE BY DR BOPOH.png" type="Texture" id=36]
+[ext_resource path="res://Loading/newgrounds_logo.png" type="Texture" id=37]
+[ext_resource path="res://Loading/FRIDAY NIGHT FUNKIN.png" type="Texture" id=38]
+[ext_resource path="res://Loading/FRIDAY_.png" type="Texture" id=39]
+[ext_resource path="res://Loading/FRIDAY NIGHT_.png" type="Texture" id=40]
+[ext_resource path="res://Loading/NOT ASSOCIATED WITH NEWGROUNDS.png" type="Texture" id=41]
+[ext_resource path="res://Loading/CAW.png" type="Texture" id=42]
+[ext_resource path="res://Loading/CAWCAW.png" type="Texture" id=43]
+[ext_resource path="res://Loading/GirlfrendTitle/gfDanceTitle2.png" type="Texture" id=44]
+[ext_resource path="res://Loading/FNFlogo/logoBumpin2.png" type="Texture" id=45]
+[ext_resource path="res://Loading/FNFlogo/logoBumpin4.png" type="Texture" id=46]
+[ext_resource path="res://Loading/FNFlogo/logoBumpin1.png" type="Texture" id=47]
+[ext_resource path="res://Loading/FNFlogo/logoBumpin3.png" type="Texture" id=48]
+[ext_resource path="res://Loading/Nexting.tscn" type="PackedScene" id=49]
+[ext_resource path="res://Loading/pressenter/Active/AtitleEnter1.png" type="Texture" id=50]
+[ext_resource path="res://Loading/pressenter/Active/AtitleEnter2.png" type="Texture" id=51]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter2.png" type="Texture" id=52]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter1.png" type="Texture" id=53]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter39.png" type="Texture" id=54]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter38.png" type="Texture" id=55]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter41.png" type="Texture" id=56]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter40.png" type="Texture" id=57]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter42.png" type="Texture" id=58]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter3.png" type="Texture" id=59]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter5.png" type="Texture" id=60]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter7.png" type="Texture" id=61]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter6.png" type="Texture" id=62]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter9.png" type="Texture" id=63]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter12.png" type="Texture" id=64]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter13.png" type="Texture" id=65]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter18.png" type="Texture" id=66]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter17.png" type="Texture" id=67]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter16.png" type="Texture" id=68]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter19.png" type="Texture" id=69]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter14.png" type="Texture" id=70]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter20.png" type="Texture" id=71]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter8.png" type="Texture" id=72]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter4.png" type="Texture" id=73]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter10.png" type="Texture" id=74]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter11.png" type="Texture" id=75]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter15.png" type="Texture" id=76]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter23.png" type="Texture" id=77]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter24.png" type="Texture" id=78]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter26.png" type="Texture" id=79]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter29.png" type="Texture" id=80]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter21.png" type="Texture" id=81]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter28.png" type="Texture" id=82]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter22.png" type="Texture" id=83]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter37.png" type="Texture" id=84]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter25.png" type="Texture" id=85]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter27.png" type="Texture" id=86]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter30.png" type="Texture" id=87]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter31.png" type="Texture" id=88]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter32.png" type="Texture" id=89]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter33.png" type="Texture" id=90]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter34.png" type="Texture" id=91]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter35.png" type="Texture" id=92]
+[ext_resource path="res://Loading/pressenter/Unactive/UtitleEnter36.png" type="Texture" id=93]
+[ext_resource path="res://Loading/GirlfrendTitle/gfDanceTitle9.png" type="Texture" id=94]
+[ext_resource path="res://Loading/GirlfrendTitle/gfDanceTitle1.png" type="Texture" id=95]
+[ext_resource path="res://Loading/GirlfrendTitle/gfDanceTitle17.png" type="Texture" id=96]
+[ext_resource path="res://Loading/GirlfrendTitle/gfDanceTitle7.png" type="Texture" id=97]
+[ext_resource path="res://Loading/GirlfrendTitle/gfDanceTitle6.png" type="Texture" id=98]
+[ext_resource path="res://Loading/GirlfrendTitle/gfDanceTitle20.png" type="Texture" id=99]
+[ext_resource path="res://Loading/GirlfrendTitle/gfDanceTitle16.png" type="Texture" id=100]
+[ext_resource path="res://Loading/GirlfrendTitle/gfDanceTitle5.png" type="Texture" id=101]
+[ext_resource path="res://Loading/GirlfrendTitle/gfDanceTitle8.png" type="Texture" id=102]
+[ext_resource path="res://Loading/GirlfrendTitle/gfDanceTitle14.png" type="Texture" id=103]
+[ext_resource path="res://Loading/GirlfrendTitle/gfDanceTitle15.png" type="Texture" id=104]
+[ext_resource path="res://Loading/GirlfrendTitle/gfDanceTitle11.png" type="Texture" id=105]
+[ext_resource path="res://Loading/GirlfrendTitle/gfDanceTitle4.png" type="Texture" id=106]
+[ext_resource path="res://Loading/GirlfrendTitle/gfDanceTitle19.png" type="Texture" id=107]
+[ext_resource path="res://Loading/GirlfrendTitle/gfDanceTitle3.png" type="Texture" id=108]
+[ext_resource path="res://Loading/GirlfrendTitle/gfDanceTitle13.png" type="Texture" id=109]
+[ext_resource path="res://Loading/GirlfrendTitle/gfDanceTitle10.png" type="Texture" id=110]
+[ext_resource path="res://Loading/GirlfrendTitle/gfDanceTitle18.png" type="Texture" id=111]
+[ext_resource path="res://Loading/GirlfrendTitle/gfDanceTitle12.png" type="Texture" id=112]
+[ext_resource path="res://Menu/Choices/StoryMode/Backgrounds/menu_stage.png" type="Texture" id=113]
+[ext_resource path="res://Menu/Choices/StoryMode/UI_assets/Week_Tutorial.png" type="Texture" id=114]
+[ext_resource path="res://Menu/Choices/StoryMode/UI_assets/Week_Chapter1.png" type="Texture" id=115]
+[ext_resource path="res://Menu/Backgrounds/Original/OmenuBGMagenta.png" type="Texture" id=118]
+[ext_resource path="res://Menu/Backgrounds/TabiMod/TmenuDesat.png" type="Texture" id=119]
+[ext_resource path="res://Menu/Backgrounds/TabiMod/TmenuBG.png" type="Texture" id=120]
+[ext_resource path="res://Menu/Backgrounds/TabiMod/TmenuBGMagenta.png" type="Texture" id=121]
+[ext_resource path="res://Menu/Backgrounds/TabiMod/TmenuOptionsBG.png" type="Texture" id=122]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Girlfrend/Cpw_GF9.png" type="Texture" id=123]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Girlfrend/Cpw_GF10.png" type="Texture" id=124]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Girlfrend/Cpw_GF7.png" type="Texture" id=125]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Girlfrend/Cpw_GF8.png" type="Texture" id=126]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Girlfrend/Cpw_GF12.png" type="Texture" id=127]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Girlfrend/Cpw_GF13.png" type="Texture" id=128]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Girlfrend/Cpw_GF14.png" type="Texture" id=129]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Girlfrend/Cpw_GF11.png" type="Texture" id=130]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Girlfrend/Cpw_GF3.png" type="Texture" id=131]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Girlfrend/Cpw_GF2.png" type="Texture" id=132]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Girlfrend/Cpw_GF1.png" type="Texture" id=133]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Girlfrend/Cpw_GF4.png" type="Texture" id=134]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Girlfrend/Cpw_GF5.png" type="Texture" id=135]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Girlfrend/Cpw_GF6.png" type="Texture" id=136]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Girlfrend/Cpw_GF17.png" type="Texture" id=137]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Girlfrend/Cpw_GF18.png" type="Texture" id=138]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Girlfrend/Cpw_GF15.png" type="Texture" id=139]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Girlfrend/Cpw_GF20.png" type="Texture" id=140]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Girlfrend/Cpw_GF16.png" type="Texture" id=141]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Girlfrend/Cpw_GF19.png" type="Texture" id=142]
+[ext_resource path="res://Menu/Choices/StoryMode/Backgrounds/menu_tabi.png" type="Texture" id=143]
+[ext_resource path="res://Loading/Flash/WBG_25.png" type="Texture" id=144]
+[ext_resource path="res://Loading/Flash/WBG_0.png" type="Texture" id=145]
+[ext_resource path="res://Loading/Flash/WBG_19.png" type="Texture" id=146]
+[ext_resource path="res://Loading/Flash/WBG_94.png" type="Texture" id=147]
+[ext_resource path="res://Loading/Flash/WBG_81.png" type="Texture" id=148]
+[ext_resource path="res://Loading/Flash/WBG_75.png" type="Texture" id=149]
+[ext_resource path="res://Loading/Flash/WBG_69.png" type="Texture" id=150]
+[ext_resource path="res://Loading/Flash/WBG_88.png" type="Texture" id=151]
+[ext_resource path="res://Loading/Flash/WBG_63.png" type="Texture" id=152]
+[ext_resource path="res://Loading/Flash/WBG_50.png" type="Texture" id=153]
+[ext_resource path="res://Loading/Flash/WBG_56.png" type="Texture" id=154]
+[ext_resource path="res://Loading/Flash/WBG_31.png" type="Texture" id=155]
+[ext_resource path="res://Loading/Flash/WBG_44.png" type="Texture" id=156]
+[ext_resource path="res://Loading/Flash/WBG_38.png" type="Texture" id=157]
+[ext_resource path="res://Loading/Flash/WBG_13.png" type="Texture" id=158]
+[ext_resource path="res://Loading/Flash/WBG_6.png" type="Texture" id=159]
+[ext_resource path="res://Font/FNF.ttf" type="DynamicFontData" id=160]
+[ext_resource path="res://Menu/Choices/StoryMode/UI_assets/Difficulties/Difficulties.tscn" type="PackedScene" id=161]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Boyfrend/Cpw_BF3.png" type="Texture" id=162]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Boyfrend/Cpw_BF1.png" type="Texture" id=163]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Boyfrend/Cpw_BF2.png" type="Texture" id=164]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Boyfrend/Cpw_BF8.png" type="Texture" id=165]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Boyfrend/Cpw_BF4.png" type="Texture" id=166]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Boyfrend/Cpw_BF5.png" type="Texture" id=167]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Boyfrend/Cpw_BF7.png" type="Texture" id=168]
+[ext_resource path="res://Menu/Choices/StoryMode/Charecters_preview/Boyfrend/Cpw_BF6.png" type="Texture" id=169]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 22 ) ],
+"loop": false,
+"name": "OFreeplayMenu",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "OFreeplayMenu_begin",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 20 ) ],
+"loop": false,
+"name": "OMainMenu",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 23 ) ],
+"loop": false,
+"name": "OOptionsMenu",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "OOptionsMenu_begin",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 118 ) ],
+"loop": true,
+"name": "OStoryMenu_begin",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 119 ) ],
+"loop": false,
+"name": "TFreeplayMenu",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 120 ), ExtResource( 119 ) ],
+"loop": true,
+"name": "TFreeplayMenu_begin",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 120 ) ],
+"loop": false,
+"name": "TMainMenu",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 122 ) ],
+"loop": false,
+"name": "TOptionsMenu",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 120 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "TOptionsMenu_begin",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 120 ), ExtResource( 121 ) ],
+"loop": true,
+"name": "TStoryMenu_begin",
+"speed": 6.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 50 ), ExtResource( 51 ) ],
+"loop": true,
+"name": "Apresstobegin",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 42 ) ],
+"loop": false,
+"name": "CAW",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 43 ) ],
+"loop": false,
+"name": "CAWCAW",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 39 ) ],
+"loop": false,
+"name": "FRIDAY",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 40 ) ],
+"loop": false,
+"name": "FRIDAY NIGHT",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 38 ) ],
+"loop": false,
+"name": "FRIDAY NIGHT FUNKIN",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 41 ) ],
+"loop": false,
+"name": "NOT ASSOCIATED WITH",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 35 ) ],
+"loop": false,
+"name": "RHYTHM ENGINE BY",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 36 ) ],
+"loop": false,
+"name": "RHYTHM ENGINE BY DR BOPOH",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 53 ), ExtResource( 52 ), ExtResource( 59 ), ExtResource( 73 ), ExtResource( 60 ), ExtResource( 62 ), ExtResource( 61 ), ExtResource( 72 ), ExtResource( 63 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 70 ), ExtResource( 76 ), ExtResource( 68 ), ExtResource( 67 ), ExtResource( 66 ), ExtResource( 69 ), ExtResource( 71 ), ExtResource( 81 ), ExtResource( 83 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 85 ), ExtResource( 79 ), ExtResource( 86 ), ExtResource( 82 ), ExtResource( 80 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 84 ), ExtResource( 55 ), ExtResource( 54 ), ExtResource( 57 ), ExtResource( 56 ), ExtResource( 58 ) ],
+"loop": true,
+"name": "Upresstobegin",
+"speed": 12.0
+} ]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 15 ), ExtResource( 17 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "AFreePlay",
+"speed": 21.0
+}, {
+"frames": [ ExtResource( 27 ), ExtResource( 8 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "AOptions",
+"speed": 21.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 12 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "AStoryMode",
+"speed": 21.0
+}, {
+"frames": [ ExtResource( 26 ), ExtResource( 18 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "UFreePlay",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "UOptions",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ) ],
+"loop": true,
+"name": "UStoryMode",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 115 ) ],
+"loop": false,
+"name": "Week_Chapter1",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 114 ) ],
+"loop": false,
+"name": "Week_Tutorial",
+"speed": 1.0
+} ]
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 47 ), ExtResource( 45 ), ExtResource( 48 ), ExtResource( 46 ) ],
+"loop": true,
+"name": "FNFlogo",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 37 ) ],
+"loop": false,
+"name": "Newgrounds",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 113 ) ],
+"loop": false,
+"name": "WeekStage",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 143 ) ],
+"loop": false,
+"name": "WeekTabi",
+"speed": 1.0
+} ]
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 163 ), ExtResource( 164 ), ExtResource( 162 ), ExtResource( 166 ), ExtResource( 167 ) ],
+"loop": true,
+"name": "Cpw_BF",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 163 ), ExtResource( 164 ), ExtResource( 162 ), ExtResource( 166 ), ExtResource( 167 ), ExtResource( 169 ), ExtResource( 168 ), ExtResource( 165 ) ],
+"loop": false,
+"name": "Cpw_BF_continue",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 133 ), ExtResource( 132 ), ExtResource( 131 ), ExtResource( 134 ), ExtResource( 135 ), ExtResource( 136 ), ExtResource( 125 ), ExtResource( 126 ), ExtResource( 123 ), ExtResource( 124 ), ExtResource( 130 ), ExtResource( 127 ), ExtResource( 128 ), ExtResource( 129 ), ExtResource( 139 ), ExtResource( 141 ), ExtResource( 137 ), ExtResource( 138 ), ExtResource( 142 ), ExtResource( 140 ) ],
+"loop": true,
+"name": "Cpw_GF",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 95 ), ExtResource( 44 ), ExtResource( 108 ), ExtResource( 106 ), ExtResource( 101 ), ExtResource( 98 ), ExtResource( 97 ), ExtResource( 102 ), ExtResource( 94 ), ExtResource( 110 ), ExtResource( 105 ), ExtResource( 112 ), ExtResource( 109 ), ExtResource( 103 ), ExtResource( 104 ), ExtResource( 100 ), ExtResource( 96 ), ExtResource( 111 ), ExtResource( 107 ), ExtResource( 99 ) ],
+"loop": true,
+"name": "GirlfrendDance",
+"speed": 12.0
+} ]
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [ ExtResource( 147 ), ExtResource( 151 ), ExtResource( 148 ), ExtResource( 149 ), ExtResource( 150 ), ExtResource( 152 ), ExtResource( 154 ), ExtResource( 153 ), ExtResource( 156 ), ExtResource( 157 ), ExtResource( 155 ), ExtResource( 144 ), ExtResource( 146 ), ExtResource( 158 ), ExtResource( 159 ), ExtResource( 145 ) ],
+"loop": false,
+"name": "Flash",
+"speed": 16.0
+}, {
+"frames": [ ExtResource( 145 ) ],
+"loop": false,
+"name": "Null",
+"speed": 1.0
+} ]
+
+[sub_resource type="DynamicFont" id=7]
+size = 64
+font_data = ExtResource( 160 )
+
+[node name="Menu" type="Node2D"]
+script = ExtResource( 24 )
+
+[node name="BlackBackground" type="Sprite" parent="."]
+position = Vector2( 643, 200 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 34 )
+
+[node name="AnimBackground" type="AnimatedSprite" parent="."]
+position = Vector2( 643, 365 )
+frames = SubResource( 2 )
+animation = "TStoryMenu_begin"
+
+[node name="Credits" type="AnimatedSprite" parent="."]
+position = Vector2( 643, 696 )
+frames = SubResource( 3 )
+animation = "Upresstobegin"
+frame = 2
+playing = true
+
+[node name="Choicemod0" type="AnimatedSprite" parent="."]
+position = Vector2( 643, 145 )
+frames = SubResource( 1 )
+animation = "AFreePlay"
+frame = 1
+playing = true
+
+[node name="Choicemod1" type="AnimatedSprite" parent="."]
+position = Vector2( 643, 293 )
+frames = SubResource( 1 )
+animation = "Week_Chapter1"
+playing = true
+
+[node name="Choicemod2" type="AnimatedSprite" parent="."]
+position = Vector2( 643, 450 )
+frames = SubResource( 1 )
+animation = "UOptions"
+frame = 1
+playing = true
+
+[node name="Interface" type="Node2D" parent="."]
+position = Vector2( 0, 140 )
+
+[node name="Logos" type="AnimatedSprite" parent="Interface"]
+position = Vector2( 410, 143 )
+frames = SubResource( 4 )
+animation = "FNFlogo"
+frame = 3
+playing = true
+
+[node name="GirlfrendDance" type="AnimatedSprite" parent="Interface"]
+position = Vector2( 900, 270 )
+scale = Vector2( 0.9, 0.9 )
+frames = SubResource( 5 )
+animation = "GirlfrendDance"
+frame = 12
+playing = true
+
+[node name="Cpw_BF" type="AnimatedSprite" parent="Interface"]
+position = Vector2( 643, 195 )
+frames = SubResource( 5 )
+animation = "Cpw_BF"
+frame = 4
+playing = true
+
+[node name="Flash" type="AnimatedSprite" parent="Interface"]
+position = Vector2( 643, 280 )
+scale = Vector2( 6, 6 )
+frames = SubResource( 6 )
+animation = "Null"
+playing = true
+
+[node name="Choice" parent="Interface" instance=ExtResource( 3 )]
+margin_top = 30.0
+margin_bottom = 160.0
+
+[node name="List" parent="Interface" instance=ExtResource( 2 )]
+margin_top = 30.0
+margin_bottom = 160.0
+
+[node name="Difficulties" parent="Interface" instance=ExtResource( 161 )]
+margin_top = 30.0
+margin_bottom = 160.0
+
+[node name="LeftStick" parent="Interface" instance=ExtResource( 6 )]
+margin_top = 40.0
+margin_bottom = 170.0
+
+[node name="RightStick" parent="Interface" instance=ExtResource( 4 )]
+margin_top = 40.0
+margin_bottom = 170.0
+
+[node name="Score" type="Label" parent="Interface"]
+margin_left = 495.0
+margin_top = -23.0
+margin_right = 1059.0
+margin_bottom = 41.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_fonts/font = SubResource( 7 )
+text = "week score: 0"
+align = 1
+
+[node name="Transition" type="Sprite" parent="Interface"]
+position = Vector2( 643, -1160 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 34 )
+
+[node name="InfoWindow" parent="Interface" instance=ExtResource( 1 )]
+margin_top = -30.0
+margin_bottom = 100.0
+
+[node name="HitBox" parent="Interface" instance=ExtResource( 5 )]
+margin_top = 30.0
+margin_bottom = 160.0
+
+[node name="Nexting" parent="Interface" instance=ExtResource( 49 )]
+margin_top = 30.0
+margin_bottom = 160.0
+
+[node name="Camera2D" type="Camera2D" parent="Interface"]
+position = Vector2( 643, 309 )
+current = true
+zoom = Vector2( 0.78, 0.78 )
+
+[node name="MenuMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 25 )
+bus = "Music"
+
+[node name="Choice_cancel" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 33 )
+bus = "Music"
+
+[node name="Choice_scroll" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 32 )
+bus = "Music"
+
+[node name="Choice_confirm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 31 )
+bus = "Music"

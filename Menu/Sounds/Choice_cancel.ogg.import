@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Choice_cancel.ogg-4db60900b1b83afd26ea32831a5f5ed8.oggstr"
+
+[deps]
+
+source_file="res://Menu/Sounds/Choice_cancel.ogg"
+dest_files=[ "res://.import/Choice_cancel.ogg-4db60900b1b83afd26ea32831a5f5ed8.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
