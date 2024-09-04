@@ -407,14 +407,13 @@ animation = "TStoryMenu_begin"
 position = Vector2( 643, 696 )
 frames = SubResource( 3 )
 animation = "Upresstobegin"
-frame = 2
+frame = 4
 playing = true
 
 [node name="Choicemod0" type="AnimatedSprite" parent="."]
 position = Vector2( 643, 145 )
 frames = SubResource( 1 )
 animation = "AFreePlay"
-frame = 1
 playing = true
 
 [node name="Choicemod1" type="AnimatedSprite" parent="."]
@@ -427,7 +426,7 @@ playing = true
 position = Vector2( 643, 450 )
 frames = SubResource( 1 )
 animation = "UOptions"
-frame = 1
+frame = 2
 playing = true
 
 [node name="Interface" type="Node2D" parent="."]
@@ -437,7 +436,6 @@ position = Vector2( 0, 140 )
 position = Vector2( 410, 143 )
 frames = SubResource( 4 )
 animation = "FNFlogo"
-frame = 3
 playing = true
 
 [node name="GirlfrendDance" type="AnimatedSprite" parent="Interface"]
@@ -445,7 +443,7 @@ position = Vector2( 900, 270 )
 scale = Vector2( 0.9, 0.9 )
 frames = SubResource( 5 )
 animation = "GirlfrendDance"
-frame = 12
+frame = 16
 playing = true
 
 [node name="Cpw_BF" type="AnimatedSprite" parent="Interface"]
